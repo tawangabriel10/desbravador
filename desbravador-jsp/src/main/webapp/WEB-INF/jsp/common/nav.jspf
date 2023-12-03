@@ -1,0 +1,11 @@
+<nav role="navigation" class="navbar navbar-default">
+ <div class="">
+  <a href="/desbravador" class="navbar-brand">Desbravador</a>
+ </div>
+ <div class="navbar-collapse">
+     <ul class="nav navbar-nav">
+          <li class="active"><a href="/desbravador/pessoa/listar">Pessoas</a></li>
+          <li><a href="/desbravador/projeto/listar">Projetos</a></li>
+     </ul>
+ </div>
+</nav>

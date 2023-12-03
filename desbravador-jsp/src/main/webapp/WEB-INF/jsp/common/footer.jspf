@@ -1,0 +1,20 @@
+<script src="/desbravador/webjars/jquery/1.9.1/jquery.min.js"></script>
+<script src="/desbravador/webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="/desbravador/webjars/bootstrap-datepicker/1.0.1/js/bootstrap-datepicker.js"></script>
+<script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
+
+
+<script>
+    $('#targetDate').datepicker({
+        format: 'dd/mm/yyyy'
+    });
+    $(".cpf").mask("999.999.999-99");
+</script>
+<div class="footer">
+    <h1>
+        Desbravador
+    </h1>
+</div>
+</body>
+
+</html>
