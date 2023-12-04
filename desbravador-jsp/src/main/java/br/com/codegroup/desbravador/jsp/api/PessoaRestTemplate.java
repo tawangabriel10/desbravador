@@ -4,7 +4,6 @@ import br.com.codegroup.desbravador.jsp.dto.MainErrorDTO;
 import br.com.codegroup.desbravador.jsp.dto.PessoaDTO;
 import br.com.codegroup.desbravador.jsp.exception.BunisessException;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;

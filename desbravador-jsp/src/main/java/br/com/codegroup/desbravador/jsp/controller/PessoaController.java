@@ -47,7 +47,7 @@ public class PessoaController {
     }
 
     @PostMapping("/cadastrar")
-    public RedirectView cadastrarPessoa(@ModelAttribute("pessoa") PessoaDTO pessoaDTO, RedirectAttributes redirectAttributes) {
+    public RedirectView cadastrarPessoa(@ModelAttribute("pessoa") PessoaDTO pessoaDTO, RedirectAttributes redirectAttributes, ModelMap model) {
         try {
             final RedirectView redirectView = new RedirectView("/pessoa/listar", true);
             final PessoaDTO pessoaSalva = pessoaService.cadastrar(pessoaDTO);
@@ -59,6 +59,7 @@ public class PessoaController {
             final RedirectView redirectView = new RedirectView("/projeto/cadastrar", true);
             redirectAttributes.addFlashAttribute("isFail", true);
             redirectAttributes.addFlashAttribute("messageFail", ex.getMessage());
+            model.addAttribute("pessoa", pessoaDTO);
             return redirectView;
         }
     }
@@ -105,6 +106,7 @@ public class PessoaController {
             final RedirectView redirectView = new RedirectView("/pessoa/cadastrar", true);
             redirectAttributes.addFlashAttribute("isFail", true);
             redirectAttributes.addFlashAttribute("messageFail", ex.getMessage());
+            model.addAttribute("pessoa", pessoaDTO);
             return redirectView;
         }
     }

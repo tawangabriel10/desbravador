@@ -1,6 +1,7 @@
 package br.com.codegroup.desbravador.jsp.dto;
 
-import com.google.gson.Gson;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,6 +11,7 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @Data
 @Builder
@@ -22,11 +24,20 @@ public class MainErrorDTO implements Serializable {
 
     private List<String> errors = new ArrayList<>();
 
-    private Gson gson = new Gson();
-
     public MainErrorDTO(String json) {
-        MainErrorDTO mainError =  gson.fromJson(json, MainErrorDTO.class);
-        this.status = mainError.getStatus();
-        this.message = mainError.getMessage();
+        try {
+            MainErrorDTO mainError = new ObjectMapper().readValue(json, MainErrorDTO.class);
+            if (Objects.nonNull(mainError.getErrors()) && !mainError.getErrors().isEmpty()) {
+                this.message = String.join(",", mainError.getErrors());
+            } else {
+                this.message = mainError.getMessage();
+            }
+            this.status = mainError.getStatus();
+            this.errors = new ArrayList<>();
+        } catch(JsonProcessingException ex) {
+            this.status = 400;
+            this.message = "";
+            this.errors = new ArrayList<>();
+        }
     }
 }

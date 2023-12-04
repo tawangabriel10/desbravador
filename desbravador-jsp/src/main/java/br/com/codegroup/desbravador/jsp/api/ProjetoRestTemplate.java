@@ -1,9 +1,7 @@
 package br.com.codegroup.desbravador.jsp.api;
 
 import br.com.codegroup.desbravador.jsp.dto.MainErrorDTO;
-import br.com.codegroup.desbravador.jsp.dto.PessoaDTO;
 import br.com.codegroup.desbravador.jsp.dto.ProjetoDTO;
-import br.com.codegroup.desbravador.jsp.dto.VincularMembroDTO;
 import br.com.codegroup.desbravador.jsp.exception.BunisessException;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpEntity;

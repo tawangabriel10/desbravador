@@ -54,9 +54,9 @@ public class ProjetoController {
     }
 
     @PostMapping("/cadastrar")
-    public RedirectView cadastrarProjeto(@ModelAttribute("projeto") ProjetoDTO projetoDTO, RedirectAttributes redirectAttributes) {
+    public RedirectView cadastrarProjeto(@ModelAttribute("projeto") ProjetoDTO projetoDTO, RedirectAttributes redirectAttributes, ModelMap model) {
         try {
-            final RedirectView redirectView = new RedirectView("/projeto/cadastrar", true);
+            final RedirectView redirectView = new RedirectView("/projeto/listar", true);
             final ProjetoDTO projetoSalvo = projetoService.cadastrar(projetoDTO);
             redirectAttributes.addFlashAttribute("projetoSalvo", projetoSalvo);
             redirectAttributes.addFlashAttribute("isSuccess", true);
@@ -66,6 +66,7 @@ public class ProjetoController {
             final RedirectView redirectView = new RedirectView("/projeto/cadastrar", true);
             redirectAttributes.addFlashAttribute("isFail", true);
             redirectAttributes.addFlashAttribute("messageFail", ex.getMessage());
+            model.addAttribute("projeto", projetoDTO);
             return redirectView;
         }
     }
@@ -100,7 +101,7 @@ public class ProjetoController {
     }
 
     @PostMapping(value = "/alterar")
-    public RedirectView alterar(@Valid ProjetoDTO projetoDTO, BindingResult result, RedirectAttributes redirectAttributes) {
+    public RedirectView alterar(@Valid ProjetoDTO projetoDTO, BindingResult result, RedirectAttributes redirectAttributes, ModelMap model) {
         try {
             if (result.hasErrors()) {
                 return new RedirectView("/projeto/cadastrar", true);
@@ -116,6 +117,7 @@ public class ProjetoController {
             final RedirectView redirectView = new RedirectView("/projeto/cadastrar", true);
             redirectAttributes.addFlashAttribute("isFail", true);
             redirectAttributes.addFlashAttribute("messageFail", ex.getMessage());
+            model.addAttribute("projeto", projetoDTO);
             return redirectView;
         }
     }

@@ -26,10 +26,10 @@ public class ProjetoService {
     }
 
     public ProjetoDTO cadastrar(ProjetoDTO projetoDTO) {
-        if (Objects.isNull(projetoDTO.getGerente())) {
+        if (Objects.nonNull(projetoDTO.getIdGerente())) {
             projetoDTO.setGerente(new PessoaDTO());
+            projetoDTO.getGerente().setId(projetoDTO.getIdGerente());
         }
-        projetoDTO.getGerente().setId(projetoDTO.getIdGerente());
         return projetoRestTemplate.cadastrar(projetoDTO);
     }
 
@@ -46,10 +46,10 @@ public class ProjetoService {
     }
 
     public ProjetoDTO alterar(ProjetoDTO projetoDTO) {
-        if (Objects.isNull(projetoDTO.getGerente())) {
+        if (Objects.nonNull(projetoDTO.getIdGerente())) {
             projetoDTO.setGerente(new PessoaDTO());
+            projetoDTO.getGerente().setId(projetoDTO.getIdGerente());
         }
-        projetoDTO.getGerente().setId(projetoDTO.getIdGerente());
         return projetoRestTemplate.alterar(projetoDTO);
     }
 

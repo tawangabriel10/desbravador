@@ -1,10 +1,12 @@
 
+d
+java:S1192,"GDefine a constant instead of duplicating this literal "pessoa" 4 times.(ïíÍ8°—º±Ã1
 i
 java:S1192<"GDefine a constant instead of duplicating this literal "isFail" 3 times.(§¸š¾ùÿÿÿÿ8¡½˜êÂ1
 n
 java:S1192="LDefine a constant instead of duplicating this literal "messageFail" 3 times.(±ûÈ¼şÿÿÿÿ8¢½˜êÂ1
 o
-java:S1192L"RDefine a constant instead of duplicating this literal "/pessoa/cadastrar" 3 times.(•öÚõ8Ë÷–êÂ1
+java:S1192M"RDefine a constant instead of duplicating this literal "/pessoa/cadastrar" 3 times.(•öÚõ8Ë÷–êÂ1
 q
 java:S11924"ODefine a constant instead of duplicating this literal "/pessoa/listar" 3 times.(¼ËÎ¼ùÿÿÿÿ8Í¹–êÂ1
 q
