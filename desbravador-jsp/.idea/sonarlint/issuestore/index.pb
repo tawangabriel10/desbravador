@@ -5,18 +5,8 @@
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 U
 %src/main/webapp/WEB-INF/jsp/index.jsp,f/1/f16d1c46eaaabb105b651081f6c87e034b2028d2
-]
--src/main/webapp/WEB-INF/jsp/listar-pessoa.jsp,8/a/8ac1bfff9d8abab64d4abc6e6364d56fe5657394
 `
 0src/main/webapp/WEB-INF/jsp/cadastrar-pessoa.jsp,d/6/d61ff0f307d62ca47278feb00889afaab784d095
-^
-.src/main/webapp/WEB-INF/jsp/commom/footer.jspf,5/5/55cb9f655c0ce5b1b6b978fc94ce9319332f9abf
-^
-.src/main/webapp/WEB-INF/jsp/commom/header.jspf,0/9/0928e522522da341ba5df7b73f9dd5cf7c890931
-[
-+src/main/webapp/WEB-INF/jsp/commom/nav.jspf,4/7/470f658d806955de7cd45f91991525b0378f8919
-}
-Msrc/main/java/br/com/codegroup/desbravador/jsp/controller/HomeController.java,a/d/ad083d13f275094115b34097935fa1c0e371fad5
 z
 Jsrc/main/java/br/com/codegroup/desbravador/jsp/api/PessoaRestTemplate.java,8/5/859dcc0d2885de70782775d5ee354b7453258869
 q
@@ -43,8 +33,6 @@ t
 Dsrc/main/java/br/com/codegroup/desbravador/jsp/dto/MainErrorDTO.java,7/e/7e05379d896269d7e3dcdce509f4114e995d1271
 
 Osrc/main/java/br/com/codegroup/desbravador/jsp/exception/BunisessException.java,c/1/c1632b5f87507b6a013d356b09832eddfeed50aa
-w
-Gsrc/main/java/br/com/codegroup/desbravador/jsp/api/IndexController.java,8/8/888b871f890f9cfebbb0bad2f338cc0ab7a3287f
 ~
 Nsrc/main/java/br/com/codegroup/desbravador/jsp/controller/IndexController.java,f/6/f65be1a20f2744f0087440166226e9f0838c34dd
 ~
@@ -69,7 +57,5 @@ Qsrc/main/java/br/com/codegroup/desbravador/jsp/enumeration/ProjetoStatusEnum.ja
 Ksrc/main/java/br/com/codegroup/desbravador/jsp/api/MembrosRestTemplate.java,a/a/aa35678478b2592d135cb9cc31ca690b01df37a1
 y
 Isrc/main/java/br/com/codegroup/desbravador/jsp/dto/VincularMembroDTO.java,1/b/1b4a4f7eef705d19654a9a9e0723ac1169af5286
-`
-0src/main/webapp/WEB-INF/jsp/vincular-projeto.jsp,9/4/94ba4f13640808df48c1556ae1a4d8a7d22c4b0d
 g
 7src/main/webapp/WEB-INF/jsp/vincular-pessoa-projeto.jsp,9/8/98bbe8df2e8ff8a35556cf7e31ec442f632a9a22

@@ -1,3 +1,7 @@
 
-C
-java:S1948"&Make "gson" transient or serializable.(ğŒ©8”ÉÊìÂ1
+G
+java:S1068"*Remove this unused "status" private field.(‚Ÿü8æÉ´¯Ã1
+M
+java:S1068"+Remove this unused "message" private field.(ù„è¿ûÿÿÿÿ8çÉ´¯Ã1
+L
+java:S1068"*Remove this unused "errors" private field.(óËˆ¬ıÿÿÿÿ8çÉ´¯Ã1
