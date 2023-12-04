@@ -59,3 +59,6 @@ y
 Isrc/main/java/br/com/codegroup/desbravador/jsp/dto/VincularMembroDTO.java,1/b/1b4a4f7eef705d19654a9a9e0723ac1169af5286
 g
 7src/main/webapp/WEB-INF/jsp/vincular-pessoa-projeto.jsp,9/8/98bbe8df2e8ff8a35556cf7e31ec442f632a9a22
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
